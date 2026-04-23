@@ -78,7 +78,6 @@ li {
 
 .delItem {
   display: block;
-  float: right;
   padding: 6px;
   border: 1px solid red;
   background: #fff;
@@ -86,7 +85,7 @@ li {
   margin-bottom: 5px;
   cursor: pointer;
   border-radius: 15px;
-  margin-left: 25px;
+  margin-left: 50px;
 }
 
 
