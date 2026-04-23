@@ -68,7 +68,7 @@ li {
   padding-bottom: 8px;
   border-bottom: 1px solid rgba(0,0,0,0.4);
   display: block;
-  min-width: 50%;
+  max-width: 40%;
 
   &:last-child {
     margin-bottom: 0;
