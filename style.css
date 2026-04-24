@@ -13,7 +13,7 @@ h2 {
 }
 
 .container {
-  width: 65vw;
+  max-width: 89%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@ h2 {
 }
 
 #myForm input[type='text'] {
-  min-width: 50%;
+  min-width: 250px;
 }
 
 #myForm input[type='submit'] {
@@ -67,8 +67,12 @@ li {
   margin-bottom: 8px;
   padding-bottom: 8px;
   border-bottom: 1px solid rgba(0,0,0,0.4);
-  display: block;
-  min-width: 300px;
+  min-width: 200px;
+
+  display: grid;
+  grid-template-columns: 40px 1fr 60px;
+  grid-auto-flow: row;
+  align-items: center;
 
   &:last-child {
     margin-bottom: 0;
@@ -76,8 +80,18 @@ li {
   }
 }
 
+li input[type=checkbox] {
+  background-color: black;
+  color: white;
+  padding: 7px;
+  width: 20px;
+  height: 20px;
+
+}
+
 .delItem {
   display: block;
+  float: right;
   padding: 6px;
   border: 1px solid red;
   background: #fff;
@@ -85,7 +99,9 @@ li {
   margin-bottom: 5px;
   cursor: pointer;
   border-radius: 15px;
-  margin-left: 50px;
 }
 
+.linethrough {
+  text-decoration: line-through;
+}
 
